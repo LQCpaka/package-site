@@ -1,0 +1,38 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Layout.master.cs" Inherits="WebBanSach.Layout" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="#">BookStore Online</a>
+
+            <!-- Links -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="XemSach.aspx">Xem sách</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="QTSach.aspx">Quản trị</a>
+                </li>               
+            </ul>
+        </nav>
+
+        <div class="container" style="padding:20px; min-height:550px">
+            <asp:ContentPlaceHolder ID="NoiDung" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+
+        <div class="alert alert-info text-center">
+             1023233 - Lê Quốc Cần
+        </div>
+    </form>
+</body>
+</html>
