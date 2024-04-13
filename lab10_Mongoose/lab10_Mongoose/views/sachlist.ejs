@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh mục sách</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+
+<body>
+    <div class="container">
+        <h1 style="text-align: center; color:red;">DANH MỤC SÁCH</h1>
+        <a type="button" class="btn btn-primary mb-3" href="/sach/them">Thêm sách</a>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th scope="col">STT</th>
+                    <th scope="col">Tên sách</th>
+                    <th scope="col">Đơn giá</th>
+                    <th scope="col">Nhà XB</th>
+                    <th scope="col">Xuất xứ</th>
+                    <th scope="col">Thao tác</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% sachs.forEach(s => { %>
+                <tr>
+                    <th><%= s.id %></th>
+                    <td><%= s.tenSach %></td>
+                    <td><%= s.donGia %></td>
+                    <td><%= s.nhaXB %></td> <!-- Kiểm tra s.nhaXB trước khi truy cập vào s.nhaXB.tenNXB -->
+                    <td><%= s.xuatXu == 1 ? "Trong nước" : "Nước ngoài" %></td>
+                    <td align="center">
+                        <a type="button" class="btn btn-danger" href="/sach/xoa/<%=s.id%>"><i class="fa-regular fa-trash-can"></i></a>
+                        <a type="button" class="btn btn-danger" href="/sach/sua/<%=s.id%>"><i class="fa-solid fa-pen-to-square"></i></a>
+                    </td>
+                </tr>
+                <% }) %>
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

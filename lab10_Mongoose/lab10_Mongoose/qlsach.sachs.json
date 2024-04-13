@@ -1,0 +1,33 @@
+[{
+  "_id": {
+    "$oid": "660a2b751b51b61d7f464d38"
+  },
+  "id": 1,
+  "tenSach": "Đắc Nhân Tâm",
+  "donGia": 2000000,
+  "xuatXu": 1,
+  "moTa": "Sách Lý Luận",
+  "urlHinh": "dac-nhan-tam.jpg"
+},
+{
+  "_id": {
+    "$oid": "660a2cd61b51b61d7f464d3b"
+  },
+  "id": 2,
+  "tenSach": "Rèn Nghị Lực",
+  "donGia": 2500000,
+  "xuatXu": 1,
+  "moTa": "Sách Lý Luận",
+  "urlHinh": "ren-nghi-luc.jpg"
+},
+{
+  "_id": {
+    "$oid": "660cc8c26c8089381898706e"
+  },
+  "id": 3,
+  "tenSach": "Dòng Sông Ly Biệt",
+  "donGia": 2800000,
+  "xuatXu": 0,
+  "moTa": "Truyện Tình Cảm",
+  "urlHinh": "dong-song-ly-biet.jpg"
+}]

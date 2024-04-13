@@ -1,0 +1,19 @@
+div[MaCD]{
+	cursor: pointer;
+}
+div[MaCD]:hover{
+	color: red;
+	font-weight: bold;
+}
+#footer{
+	min-height: 50px;
+	line-height: 50px;
+}
+#main-form{
+	padding: 20px;
+	/* margin-top: 30px; */
+	/* margin-bottom: 30px; */
+/* 	box-shadow: 0px 0px 10px gray;
+	border-radius: 10px; */
+}
+
